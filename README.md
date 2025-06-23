@@ -47,7 +47,7 @@ How Authentication Works
 - Client uses that token to access protected APIs in Service A and B.
 - Each service validates the token and checks its scope.
 
-##🧪 Test Flow
+## 🧪 Test Flow
 1. Request Token
 ```bash
 curl -X POST https://localhost:5001/connect/token \
@@ -69,18 +69,18 @@ curl -H "Authorization: Bearer {access_token}" https://localhost:5002/secure-dat
 ```bash
 curl -H "Authorization: Bearer {access_token}" https://localhost:5003/secure-data
 ```
-##👤 Test User
+## 👤 Test User
 | Username | Password |  
 |-------|-------|
 | test | password |
 
-##📄 Technologies Used
+## 📄 Technologies Used
 - ASP.NET Core 7
 - Duende IdentityServer (for local development)
 - OAuth2 + OpenID Connect
 - JWT Bearer Authentication
 
-##📌 Notes
+## 📌 Notes
 - This is a simplified setup for local SSO testing.
 - For production, consider:
 - Using Authorization Code Flow with PKCE (for SPA/mobile apps)
